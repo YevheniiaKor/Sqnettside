@@ -15,8 +15,42 @@
 </head>
 <!-- Kroppen av dokumentet -->
 <body>
-
-    rsewgeg
-
+<!-- Hovedoverskrift -->
+<h1>Logg inn</h1>
+ 
+    <!-- Viser feilmelding hvis den finnes -->
+<% if (error) { %>
+<!-- Avsnitt for feilmelding -->
+<p class="message error"><%= error %></p>
+<% } %>
+ 
+    <!-- Viser suksessmelding hvis den finnes -->
+<% if (success) { %>
+<!-- Avsnitt for suksessmelding -->
+<p class="message success"><%= success %></p>
+<% } %>
+ 
+    <!-- Login-skjema som sender til /login via POST -->
+<form action="/login" method="POST" class="card">
+<!-- Etikett for e-post -->
+<label for="email">E-post</label>
+<!-- Input-felt for e-post -->
+<input id="email" name="email" type="email" required placeholder="din@epost.no" />
+ 
+      <!-- Etikett for passord -->
+<label for="password">Passord</label>
+<!-- Input-felt for passord -->
+<input id="password" name="password" type="password" required placeholder="Ditt passord" />
+ 
+      <!-- Sendeknapp -->
+<button type="submit">Logg inn</button>
+</form>
+ 
+    <!-- Lenke til registreringssiden -->
+<p>
+      Har du ikke en konto?
+<!-- Lenke til registrering -->
+<a href="/register">Registrer deg her</a>
+</p>
 </body>
 </html>
