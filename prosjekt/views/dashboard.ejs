@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!-- Angir dokumenttype som HTML5 -->
+<html lang="no"> <!-- Setter språk til norsk -->
+<head> <!-- Starter head-seksjonen -->
+  <meta charset="UTF-8" /> <!-- Bruker UTF-8 tegnsett -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Gjør siden responsiv -->
+  <title>Ditt dashbord</title> <!-- Setter tittelen som vises i nettleserfanen -->
+  <link rel="stylesheet" href="/styles.css" /> <!-- Laster valgfri CSS fra /public/styles.css -->
+</head> <!-- Slutt på head-seksjonen -->
+<body> <!-- Starter body-innholdet -->
+
+  <h1>Velkommen til dashbordet</h1> <!-- En overskrift på siden -->
+
+  <div class="card"> <!-- En boks for å vise brukerinfo -->
+    <% if (typeof user !== 'undefined' && user) { %> <!-- Sjekker at 'user' finnes -->
+      <p><strong>E-post:</strong> <%= user.email %></p> <!-- Viser innlogget brukers e-post -->
+      <% if (user.created_at) { %> <!-- Sjekker at created_at finnes før visning -->
+        <p><strong>Opprettet:</strong> <%= user.created_at %></p> <!-- Viser tidspunkt for opprettelse -->
+      <% } else { %> <!-- Hvis created_at ikke finnes -->
+        <p><strong>Opprettet:</strong> Ikke tilgjengelig</p> <!-- Fallback-tekst -->
+      <% } %> <!-- Slutt på sjekk for created_at -->
+    <% } else { %> <!-- Hvis 'user' mangler (burde ikke skje når ruta er beskyttet) -->
+      <p>Ingen brukerdata tilgjengelig.</p> <!-- Fallback-tekst -->
+    <% } %> <!-- Slutt på sjekk for user -->
+  </div> <!-- Slutt på card-div -->
+
+  <form action="/logout" method="POST"> <!-- Skjema for å logge ut med POST -->
+    <button type="submit" class="danger">Logg ut</button> <!-- Knapp for å logge ut -->
+  </form> <!-- Slutt på skjema -->
+
+</body> <!-- Slutt på body -->
+</html> <!-- Slutt på HTML-dokumentet -->
