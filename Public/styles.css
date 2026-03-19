@@ -3,9 +3,9 @@ body {
   /* Sans-serif font for bedre lesbarhet */
   font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   /* Lys bakgrunn */
-  background: #f5f7fb;
+  background: 221, 229, 182;
   /* Farge på teksten */
-  color: #222;
+  color: #222222;
   /* Litt luft rundt innholdet */
   margin: 0;
   /* Avstand fra kantene */
@@ -23,7 +23,7 @@ h1 {
 /* Kort-komponent for skjema og bokser */
 .card {
   /* Hvit bakgrunn for kortet */
-  background: #fff;
+  background: 240, 234, 210;
   /* Ramme med lys grå farge */
   border: 1px solid #e2e8f0;
   /* Runde hjørner */
@@ -66,9 +66,9 @@ label {
 /* Standard knappestil */
 button {
   /* Blå bakgrunn */
-  background: #2563eb;
+  background: 173, 193, 120;
   /* Hvit tekst */
-  color: #fff;
+  color: 108, 88, 76;
   /* Ingen kantlinje */
   border: none;
   /* Runde hjørner */
