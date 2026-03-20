@@ -11,13 +11,6 @@ body {
   /* Avstand fra kantene */
   padding: 2rem;
 }
-
-.center-container {
-  display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center;     /* Centers vertically */
-  height: 100vh;           /* Takes up the full viewport height to enable vertical centering */
-}
  
 
 /* Stil for hovedoverskrifter */
@@ -42,7 +35,7 @@ h1 {
   /* Indre marg */
   padding: 1rem;
   /* Maks bredde på kortet */
-  max-width: 500px;
+  max-width: 760px;
   /* Sentrerer kortet */
   margin: 1rem 0;
   /* Skygge for dybde */
