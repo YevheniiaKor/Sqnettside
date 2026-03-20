@@ -46,7 +46,7 @@ h1 {
 /* Stil for input-felt */
 input {
   /* Elementet tar hele bredden */
-  width: 100%;
+  width: 90%;
   /* Avstand til neste element */
   margin: 0.25rem 0 1rem;
   /* Innvendig padding */
@@ -64,7 +64,7 @@ label {
   /* Farge på etikett-tekst */
   color: #334155;
   /* Tykkere tekst */
-  font-weight: 450px;
+  font-weight: 600;
 }
 
  
