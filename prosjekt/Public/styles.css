@@ -22,6 +22,12 @@ h1 {
   text-align: center;
 }
 
+.center-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100vh;           /* Takes up the full viewport height to enable vertical centering */
+}
 
  
 /* Kort-komponent for skjema og bokser */
