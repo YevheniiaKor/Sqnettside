@@ -10,7 +10,6 @@ body {
   margin: 0;
   /* Avstand fra kantene */
   padding: 2rem;
-  align-items: center;
 }
  
 
@@ -38,6 +37,7 @@ h1 {
   margin: 1rem 0;
   /* Skygge for dybde */
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  align-content: center;
 }
  
 /* Stil for input-felt */
