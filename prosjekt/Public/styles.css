@@ -19,6 +19,7 @@ h1 {
   color: #333;
   /* Justerer margin */
   margin-bottom: 1rem;
+  text-align: center;
 }
  
 /* Kort-komponent for skjema og bokser */
