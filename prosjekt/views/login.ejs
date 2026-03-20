@@ -11,7 +11,7 @@
 <!-- Sidetittel -->
 <title>Logg inn</title>
 <!-- Knytter til CSS -->
-<link rel="stylesheet" href="/prosjekt/Public/styles.css" />
+<link rel="stylesheet" href="/styles.css" />
 </head>
 <!-- Kroppen av dokumentet -->
 <body>
@@ -31,7 +31,7 @@
 <% } %>
  
     <!-- Login-skjema som sender til /login via POST -->
-<form action="/prosjekt/views/login.ejs" method="POST" class="card">
+<form action="/login" method="POST" class="card">
 <!-- Etikett for e-post -->
 <label for="email">E-post</label>
 <!-- Input-felt for e-post -->
@@ -50,7 +50,7 @@
 <p>
       Har du ikke en konto?
 <!-- Lenke til registrering -->
-<a href="/prosjekt/views/registrer.ejs">Registrer deg her</a>
+<a href="/register">Registrer deg her</a>
 </p>
 </body>
 </html>
