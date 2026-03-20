@@ -11,6 +11,13 @@ body {
   /* Avstand fra kantene */
   padding: 2rem;
 }
+
+.center-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100vh;           /* Takes up the full viewport height to enable vertical centering */
+}
  
 
 /* Stil for hovedoverskrifter */
