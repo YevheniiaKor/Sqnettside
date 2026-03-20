@@ -25,20 +25,18 @@ h1 {
   /* Mørkere farge på overskrift */
   color: #333;
   /* Justerer margin */
-  margin-bottom: 1rem;
+  margin-bottom: 50px;
   text-align: center;
 }
 
-p {
-  text-align: center;
-}
+
  
 /* Kort-komponent for skjema og bokser */
 .card {
   /* Hvit bakgrunn for kortet */
   background: #ADC178;
   /* Ramme med lys grå farge */
-  border: 1px solid #e2e8f0;
+  border: 1px solid #417252;
   /* Runde hjørner */
   border-radius: 8px;
   /* Indre marg */
