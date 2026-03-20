@@ -35,7 +35,7 @@ h1 {
   /* Indre marg */
   padding: 1rem;
   /* Maks bredde på kortet */
-  max-width: 760px;
+  max-width: 600px;
   /* Sentrerer kortet */
   margin: 1rem 0;
   /* Skygge for dybde */
@@ -64,7 +64,7 @@ label {
   /* Farge på etikett-tekst */
   color: #334155;
   /* Tykkere tekst */
-  font-weight: 600;
+  font-weight: 450px;
 }
 
  
