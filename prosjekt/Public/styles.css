@@ -20,6 +20,9 @@ h1 {
   text-align: center;
 }
 
+.A {
+  align-items: center;
+}
 
 /* Kort-komponent for skjema og bokser */
 .card {
