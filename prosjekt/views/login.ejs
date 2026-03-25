@@ -20,6 +20,7 @@
 <h1>Logg inn</h1>
  
     <!-- Viser feilmelding hvis den finnes -->
+<div class="Textp">
 <% if (error) { %>
 <!-- Avsnitt for feilmelding -->
 <p class="message error"><%= error %></p>
@@ -30,7 +31,7 @@
 <!-- Avsnitt for suksessmelding -->
 <p class="message success"><%= success %></p>
 <% } %>
- 
+</div>
     <!-- Login-skjema som sender til /login via POST -->
 
 
