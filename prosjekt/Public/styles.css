@@ -20,28 +20,17 @@ h1 {
   text-align: center;
 }
 
-.A {
-  align-content: center;
-}
 
-/* Kort-komponent for skjema og bokser */
 .card {
-  /* Hvit bakgrunn for kortet */
-  background: #ADC178;
-  /* Ramme med lys grå farge */
-  border: 1px solid #417252;
-  /* Runde hjørner */
-  border-radius: 8px;
-  /* Indre marg */
-  padding: 1rem;
-  /* Maks bredde på kortet */
-  max-width: 480px;
-  /* Sentrerer kortet */
-  margin: 1rem 0;
-  align-items: center;
-  /* Skygge for dybde */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  
+  background: #ADC178;              /* Hvit/grønn bakgrunn for kortet */
+  border: 1px solid #417252;        /* Ramme med lys grå/grønn farge */
+  border-radius: 8px;               /* Runde hjørner */
+  padding: 1rem;                    /* Indre marg */
+  max-width: 480px;                 /* Maks bredde på kortet */
+  width: 100%;                      /* La kortet få full bredde opp til max-width */
+  margin: 1rem auto;                /* Sentrerer kortet horisontalt (auto venstre/høyre) */
+  /* align-items: center;           Fjernet fordi det ikke har effekt uten display:flex, og det ville uansett ha påvirket barn, ikke kortet selv */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Lett skygge for dybde */
 }
  
 /* Stil for input-felt */
