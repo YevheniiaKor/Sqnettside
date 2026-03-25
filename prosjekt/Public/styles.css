@@ -21,7 +21,6 @@ h1 {
 }
 
 
- 
 /* Kort-komponent for skjema og bokser */
 .card {
   /* Hvit bakgrunn for kortet */
@@ -36,6 +35,7 @@ h1 {
   max-width: 480px;
   /* Sentrerer kortet */
   margin: 1rem 0;
+  align-items: center;
   /* Skygge for dybde */
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   
