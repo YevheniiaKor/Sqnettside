@@ -21,7 +21,7 @@ h1 {
 }
 
 .A {
-  align-items: center;
+  align-content: center;
 }
 
 /* Kort-komponent for skjema og bokser */
