@@ -33,7 +33,7 @@ h1 {
   width: 100%;                      /* La kortet få full bredde opp til max-width */
   margin: 1rem auto;                /* Sentrerer kortet horisontalt (auto venstre/høyre) */
   /* align-items: center;           Fjernet fordi det ikke har effekt uten display:flex, og det ville uansett ha påvirket barn, ikke kortet selv */
-  box-shadow: rgb(38, 77, 56) 0px 20px 30px -10px; /* Lett skygge for dybde */
+  box-shadow: -10px 10px 0px #818CF8, -20px 20px 0px #A78BFA; /* Lett skygge for dybde */
 }
  
 /* Stil for input-felt */
