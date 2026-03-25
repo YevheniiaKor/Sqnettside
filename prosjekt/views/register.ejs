@@ -11,7 +11,7 @@
 <!-- Setter sidetittel i nettleserfanen -->
 <title>Registrer ny bruker</title>
 <!-- Kobler til vår CSS-fil for styling -->
-<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/prosjekt/Public/styles.css" />
 </head>
 <!-- Start på body som inneholder synlig innhold -->
 <body>
@@ -31,8 +31,7 @@
 <% } %>
  
     <!-- Registreringsskjema som sendes via POST til /register -->
-<div class="center-container">
-<form action="/register" method="POST" class="card">
+<form action="/prosjekt/views/register.ejs" method="POST" class="card">
 <!-- Felt for e-postadresse -->
 <label for="email">E-post</label>
 <!-- Input for e-post, påkrevd -->
@@ -46,13 +45,12 @@
       <!-- Knapp for å sende inn skjemaet -->
 <button type="submit">Registrer</button>
 </form>
-</div>
-
+ 
     <!-- Lenke for å gå til innloggingssiden -->
-<p>Har du allerede en konto?
+<p>
+      Har du allerede en konto?
 <!-- Lenke til login-siden -->
-<a href="/login">Logg inn her</a>
+<a href="/prosjekt/views/login.ejs">Logg inn her</a>
 </p>
-
 </body>
 </html>
