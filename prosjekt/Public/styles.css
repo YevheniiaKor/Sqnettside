@@ -3,7 +3,7 @@ body {
   /* Sans-serif font for bedre lesbarhet */
   font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   /* Lys bakgrunn */
- background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+ background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgb(200, 226, 255) 100%);
   /* Farge på teksten */
   color: #222222;
   /* Litt luft rundt innholdet */
