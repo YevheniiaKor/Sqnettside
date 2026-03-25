@@ -3,7 +3,7 @@ body {
   /* Sans-serif font for bedre lesbarhet */
   font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   /* Lys bakgrunn */
-  background: linear-gradient(36deg, #DDE5B6, #d8c3f4);
+  background: linear-gradient(#DDE5B6, #d8c3f4);
   /* Farge på teksten */
   color: #222222;
   /* Litt luft rundt innholdet */
@@ -12,6 +12,7 @@ body {
   padding: 2rem;
 }
  
+
 .Textp {
   text-align: center;
 }
