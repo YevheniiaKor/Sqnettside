@@ -87,7 +87,7 @@ button {
 /* Rød knapp for farlige handlinger (logout) */
 button.danger {
   /* Rød bakgrunn */
-  background: #aeaeae;
+  background: #8c7a95;
 }
  
 /* Stil for meldinger (feil/suksess) */
