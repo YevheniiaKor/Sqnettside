@@ -42,6 +42,7 @@ h1 {
 
 .card1 {
   background-color: #776f9c;
+  max-width: 500px; 
 }
  
 /* Stil for input-felt */
