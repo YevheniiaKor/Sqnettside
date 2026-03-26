@@ -36,6 +36,10 @@ h1 {
   /* align-items: center;           Fjernet fordi det ikke har effekt uten display:flex, og det ville uansett ha påvirket barn, ikke kortet selv */
   box-shadow: 0 0 0 3px #A78BFA, 0 0 0 6px #C4B5FD; /* Lett skygge for dybde */
 }
+
+.card1 {
+  background-color: #776f9c;
+}
  
 /* Stil for input-felt */
 input {
