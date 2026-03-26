@@ -121,3 +121,8 @@ button.danger {
   /* Ramme for suksess */
   border: 1px solid #bbf7d0;
 }
+
+a {
+  color: hotpink;
+  font-weight: bold;
+}
