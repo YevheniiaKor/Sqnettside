@@ -13,7 +13,7 @@ background: linear-gradient(91deg,rgba(255, 148, 218, 1) 22%, rgba(205, 176, 255
 }
  
 .Log {
-  align-items: center;
+  align-content: center;
 }
 
 .Textp {
