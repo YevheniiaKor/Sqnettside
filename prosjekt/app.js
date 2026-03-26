@@ -94,6 +94,38 @@ app.set('view engine', 'ejs'); // Forteller Express å bruke EJS
 // Angir at EJS-filer ligger i mappen "views" i prosjektet
 app.set('views', path.join(__dirname, 'views')); // Setter absolutt sti til views
 
+// Importerer innebygd modul 'path' for trygg bygging av filstier
+const path = require('path'); // Hjelper med OS-uavhengige filstier
+// Importerer Express for å lage HTTP-server og ruter
+const express = require('express'); // Web-rammeverk for Node
+// Importerer sqlite3 for å jobbe mot en SQLite-databasefil
+
+// Importerer bcrypt for sikker hashing av passord
+const bcrypt = require('bcrypt'); // Kan byttes til 'bcryptjs' hvis install feiler
+// Importerer express-session for enkel sesjonshåndtering (IKKE bruk MemoryStore i prod)
+const session = require('express-session'); // Håndterer sesjonsdata på server
+// Valgfritt: Importerer serve-favicon for å servere favicon effektivt
+const favicon = require('serve-favicon'); // Middleware for å håndtere /favicon.ico mer effektivt
+
+// ... (din eksisterende oppsett-kode over her)
+
+// Konfigurerer EJS som templatemotor
+app.set('view engine', 'ejs'); // Forteller Express å bruke EJS
+// Angir at EJS-filer ligger i mappen "views" i prosjektet
+app.set('views', path.join(__dirname, 'views')); // Setter absolutt sti til views
+// Legger til middleware for å parse URL-enkodet skjema (fra <form method="post">)
+app.use(express.urlencoded({ extended: true })); // Gjør req.body tilgjengelig for skjema
+
+// Valgfritt: Legger til serve-favicon før statiske filer
+app.use( // Registrerer favicon-middleware
+  favicon(path.join(__dirname, 'public', 'favicon.ico')) // Peker til /public/favicon.ico for rask serving
+); // Slutt på favicon-middleware
+
+// Serverer statiske filer (CSS, bilder, JS) fra mappen "public"
+app.use(express.static(path.join(__dirname, 'public'))); // Gjør /public tilgjengelig på rot
+
+// ... (resten av din app.js som før)
+
 // Legger til middleware for å parse URL-enkodet skjema (fra <form method="post">)
 app.use(express.urlencoded({ extended: true })); // Gjør req.body tilgjengelig for skjema
 
