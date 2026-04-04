@@ -3,7 +3,7 @@
 <head> <!-- Starter head-seksjonen -->
   <meta charset="UTF-8" /> <!-- Bruker UTF-8 tegnsett -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Gjør siden responsiv -->
-  <title>Ditt dashbord</title> <!-- Setter tittelen som vises i nettleserfanen -->
+  <title>FloraGame</title> <!-- Setter tittelen som vises i nettleserfanen -->
 
   <link rel="icon" type="image/x-icon" href="/Favicon/flowerFavicon32-32.png">
 
@@ -11,29 +11,26 @@
 </head> <!-- Slutt på head-seksjonen -->
 <body> <!-- Starter body-innholdet -->
 
-  <h1>Velkommen til dashbordet</h1> <!-- En overskrift på siden -->
+  <h1>Spill å spille på Playstation</h1> <!-- En overskrift på siden -->
 
-  
-  <div class="card"> <!-- En boks for å vise brukerinfo -->
-    <% if (typeof user !== 'undefined' && user) { %> <!-- Sjekker at 'user' finnes -->
-      <p><strong>E-post:</strong> <%= user.email %></p> <!-- Viser innlogget brukers e-post -->
-      <% if (user.created_at) { %> <!-- Sjekker at created_at finnes før visning -->
-        <p><strong>Opprettet:</strong> <%= user.created_at %></p> <!-- Viser tidspunkt for opprettelse -->
-      <% } else { %> <!-- Hvis created_at ikke finnes -->
-        <p><strong>Opprettet:</strong> Ikke tilgjengelig</p> <!-- Fallback-tekst -->
-      <% } %> <!-- Slutt på sjekk for created_at -->
-    <% } else { %> <!-- Hvis 'user' mangler (burde ikke skje når ruta er beskyttet) -->
-      <p>Ingen brukerdata tilgjengelig.</p> <!-- Fallback-tekst -->
-    <% } %> <!-- Slutt på sjekk for user -->
-  </div> <!-- Slutt på card-div -->
-  
-<div class="card1">
-<img src="/Images/Robin.jpg">
-</div>
 
-<a href="/alanwakepage">
- <img src="/Images/alanwakes.jpg" alt="Description of image" width="300" height="200" style="border:0;">
-</a>
+
+<img src="/Images/alanwakes.jpg "width="350" height="400"> 
+<img src="/Images/deadstranding.jpg" width="300" height="400">
+<img src="/Images/ghostoftsushima.jpeg" width="300" height="400">
+<img src="/Images/hogwartslegacys.jpg" width="335" height="400">
+<img src="/Images/horizon.jpg" width="350" height="400">
+<img src="/Images/splitfictions.jpg" width="300" height="400">
+<img src="/Images/cyberpunk.jpg" width="300" height="400">
+<img src="/Images/stray.jpg" width="335" height="400">
+<img src="/Images/astrobots.jpg" width="350" height="400">
+<img src="/Images/spiderman.jpg" width="300" height="400">
+<img src="/Images/godofwar.jpeg" width="300" height="400">
+<img src="/Images/metro.jpg" width="335" height="400">
+
+
+
+
 
 <div class="Textp">
   <form action="/logout" method="POST"> <!-- Skjema for å logge ut med POST -->

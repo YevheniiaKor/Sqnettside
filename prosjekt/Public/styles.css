@@ -42,8 +42,16 @@ h1 {
 
 .card1 {
   background-color: #776f9c;
-  max-width: 500px; 
+  max-width: 350px; 
 }
+
+img {
+  display: inline-block; /* Places images next to each other */
+  margin: 5px;           /* Space between images */
+  vertical-align: middle; /* Aligns them nicely */
+}
+
+
  
 /* Stil for input-felt */
 input {
