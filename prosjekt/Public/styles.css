@@ -40,6 +40,12 @@ h1 {
   box-shadow: 0 0 0 3px #A78BFA, 0 0 0 6px #C4B5FD; /* Lett skygge for dybde */
 }
 
+.box {
+  background-color: lightgrey;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
 .card1 {
   background-color: #776f9c;
   max-width: 350px; 
@@ -51,6 +57,50 @@ img {
   vertical-align: middle; /* Aligns them nicely */
 }
 
+.gallery {                      /* Velger wrapperen som holder alle .container-elementer */
+  display: flex;                /* Legger barna (containere) på en horisontal rad */
+  gap: 10px;                    /* Lager mellomrom mellom containere */
+  flex-wrap: wrap;              /* Lar elementene bryte til ny linje på små skjermer */
+  align-items: flex-start;      /* Justerer toppene på samme linje */
+  /* Tips: Hvis du ønsker KUN én rad (horisontal scroll), bytt til:
+     flex-wrap: nowrap; overflow-x: auto; */
+}
+
+.container {                    /* Stil for hver bildecontainer */
+  position: relative;           /* Referanseramme for absolutt posisjonert overlay */
+  /* Optional: flex: 0 0 auto; Hindrer at containerne strekkes */
+}
+
+.image {                        /* Stil for selve bildene */
+  display: block;               /* Fjerner ekstra linjeavstand under bildet og fungerer fint som flex-item */
+  /* width/height styres nå av HTML-attributtene dine. 
+     Alternativt kan du bruke: width: 100%; height: auto; hvis du setter bredde på .container */
+}
+
+.overlay {                      /* Stil for hover-overlay */
+  position: absolute;           /* Plasserer overlay over bildet */
+  top: 0;                       /* Fester overlay i topp */
+  bottom: 0;                    /* Fester overlay i bunn */
+  left: 0;                      /* Fester overlay til venstre */
+  right: 0;                     /* Fester overlay til høyre */
+  opacity: 0;                   /* Skjult som standard */
+  transition: 0.5s ease;        /* Myk overgang ved hover */
+  background-color: #008CBA;    /* Bakgrunnsfarge for overlay */
+}
+
+.container:hover .overlay {     /* Viser overlay når container hovres */
+  opacity: 1;                   /* Gjør overlay synlig på hover */
+}
+
+.text {                         /* Stil for teksten i overlay */
+  color: #fff;                  /* Hvit tekstfarge */
+  font-size: 20px;              /* Størrelse på tekst */
+  position: absolute;           /* Lar oss plassere teksten midt i overlay */
+  top: 50%;                     /* Plasserer midtpunkt vertikalt */
+  left: 50%;                    /* Plasserer midtpunkt horisontalt */
+  transform: translate(-50%, -50%); /* Justerer slik at teksten er perfekt i midten */
+  text-align: center;           /* Midtstiller teksten */
+}
 
  
 /* Stil for input-felt */
