@@ -85,7 +85,7 @@ img {
   right: 0;                     /* Fester overlay til høyre */
   opacity: 0;                   /* Skjult som standard */
   transition: 0.5s ease;        /* Myk overgang ved hover */
-  background-color: #008CBA;    /* Bakgrunnsfarge for overlay */
+  background-color: #8862e0;    /* Bakgrunnsfarge for overlay */
 }
 
 .container:hover .overlay {     /* Viser overlay når container hovres */
@@ -94,12 +94,38 @@ img {
 
 .text {                         /* Stil for teksten i overlay */
   color: #fff;                  /* Hvit tekstfarge */
-  font-size: 20px;              /* Størrelse på tekst */
+  font-size: 13px;              /* Størrelse på tekst */
+  position: absolute;           /* Lar oss plassere teksten midt i overlay */
+  top: 23%;                     /* Plasserer midtpunkt vertikalt */
+  left: 35%;                    /* Plasserer midtpunkt horisontalt */
+  transform: translate(-50%, -50%); /* Justerer slik at teksten er perfekt i midten */
+}
+
+.text2 {                         /* Stil for teksten i overlay */
+  color: #fff;                  /* Hvit tekstfarge */
+  font-size: 13px;              /* Størrelse på tekst */
   position: absolute;           /* Lar oss plassere teksten midt i overlay */
   top: 50%;                     /* Plasserer midtpunkt vertikalt */
-  left: 50%;                    /* Plasserer midtpunkt horisontalt */
+  left: 15%;                    /* Plasserer midtpunkt horisontalt */
   transform: translate(-50%, -50%); /* Justerer slik at teksten er perfekt i midten */
-  text-align: center;           /* Midtstiller teksten */
+}
+
+.text3 {                         /* Stil for teksten i overlay */
+  color: #fff;                  /* Hvit tekstfarge */
+  font-size: 13px;              /* Størrelse på tekst */
+  position: absolute;           /* Lar oss plassere teksten midt i overlay */
+  top: 60%;                     /* Plasserer midtpunkt vertikalt */
+  left: 15%;                    /* Plasserer midtpunkt horisontalt */
+  transform: translate(-50%, -50%); /* Justerer slik at teksten er perfekt i midten */
+}
+
+.text4 {                         /* Stil for teksten i overlay */
+  color: #fff;                  /* Hvit tekstfarge */
+  font-size: 13px;              /* Størrelse på tekst */
+  position: absolute;           /* Lar oss plassere teksten midt i overlay */
+  top: 70%;                     /* Plasserer midtpunkt vertikalt */
+  left: 15%;                    /* Plasserer midtpunkt horisontalt */
+  transform: translate(-50%, -50%); /* Justerer slik at teksten er perfekt i midten */
 }
 
  
