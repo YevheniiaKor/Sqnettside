@@ -41,9 +41,10 @@ h1 {
 }
 
 .box {
-  background-color: lightgrey;
+  background-color: rgb(255, 255, 255);
   padding: 30px;
   margin-bottom: 40px;
+  border-radius: 60px;
 }
 
 .card1 {
@@ -106,7 +107,7 @@ img {
   font-size: 13px;              /* Størrelse på tekst */
   position: absolute;           /* Lar oss plassere teksten midt i overlay */
   top: 50%;                     /* Plasserer midtpunkt vertikalt */
-  left: 15%;                    /* Plasserer midtpunkt horisontalt */
+  left: 17%;                    /* Plasserer midtpunkt horisontalt */
   transform: translate(-50%, -50%); /* Justerer slik at teksten er perfekt i midten */
 }
 
@@ -124,7 +125,7 @@ img {
   font-size: 13px;              /* Størrelse på tekst */
   position: absolute;           /* Lar oss plassere teksten midt i overlay */
   top: 70%;                     /* Plasserer midtpunkt vertikalt */
-  left: 15%;                    /* Plasserer midtpunkt horisontalt */
+  left: 9%;                    /* Plasserer midtpunkt horisontalt */
   transform: translate(-50%, -50%); /* Justerer slik at teksten er perfekt i midten */
 }
 
