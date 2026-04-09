@@ -16,7 +16,7 @@
 <!-- Overskrift for siden -->
 <h1>Register</h1>
  
-
+<div class="Textp">
     <!-- Viser feilmelding hvis "error"-variabelen er satt -->
 <% if (error) { %>
 <!-- Avsnitt med klasse for feilmelding -->
@@ -28,7 +28,8 @@
 <!-- Avsnitt med klasse for suksessmelding -->
 <p class="message success"><%= success %></p>
 <% } %>
- 
+</div> 
+
     <!-- Registreringsskjema som sendes via POST til /register -->
 <div class="center-container">
 <form action="/register" method="POST" class="card">
@@ -37,10 +38,12 @@
 <!-- Input for e-post, påkrevd -->
 <input id="email" name="email" type="email" required placeholder="din@epost.no" />
  
+
       <!-- Felt for passord -->
 <label for="password">Passord</label>
 <!-- Input for passord, påkrevd, minst 8 tegn -->
 <input id="password" name="password" type="password" minlength="8" required placeholder="Minst 8 tegn" />
+
  
       <!-- Knapp for å sende inn skjemaet -->
 <button type="submit">Registrer</button>

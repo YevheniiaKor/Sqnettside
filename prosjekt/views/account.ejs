@@ -4,10 +4,20 @@
   <meta charset="UTF-8" /> <!-- UTF-8 for norske tegn -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsiv visning -->
   <title>Konto</title> <!-- Sidetittel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="icon" type="image/x-icon" href="/Favicon/flowerFavicon32-32.png"> <!-- Favicon -->
   <link rel="stylesheet" href="/styles.css" /> <!-- Kobler til CSS -->
 </head> <!-- Slutt head -->
 <body> <!-- Starter sideinnhold -->
+
+    
+  <p> <!-- Avsnitt som holder lenken -->
+    <a href="/dashboard"> <!-- Selve lenken til konto-siden -->
+      <i class="fa fa-arrow-left icon-left1" aria-hidden="true"></i> <!-- Brukerikon fra Font Awesome (plassert før tekst) -->
+      <!-- Selve lenketeksten som vises for brukeren -->
+    </a> <!-- Slutt på lenken -->
+  </p> <!-- Slutt på avsnitt -->
+
 
   <h1>Konto</h1> <!-- Overskrift for siden -->
 
@@ -59,11 +69,11 @@
     </form> <!-- Slutt slette-skjema -->
   </div> <!-- Slutt center-container -->
 
-  <div class="Textp"> <!-- Sentrert lenkeblokk -->
-    <p> <!-- Avsnitt for lenker -->
-      <a href="/dashboard">Tilbake til dashboard</a> <!-- Lenke tilbake -->
-    </p> <!-- Slutt avsnitt -->
-  </div> <!-- Slutt lenkeblokk -->
+  <div class="Textp">
+  <form action="/logout" method="POST"> <!-- Skjema for å logge ut med POST -->
+    <button type="submit" class="danger">Logg ut</button> <!-- Knapp for å logge ut -->
+  </form> <!-- Slutt på skjema -->
+</div>
 
 </body> <!-- Slutt body -->
 </html> <!-- Slutt dokument -->

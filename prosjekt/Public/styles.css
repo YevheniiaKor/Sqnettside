@@ -43,7 +43,7 @@ h1 {
 .box {
   background-color: rgb(255, 255, 255);
   padding: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   border-radius: 60px;
 }
 
@@ -129,6 +129,15 @@ img {
   transform: translate(-50%, -50%); /* Justerer slik at teksten er perfekt i midten */
 }
 
+.icon-left {              /* Velger elementer med klassen 'icon-left' (ikon foran tekst) */
+  margin-left: 25em;
+  font-size: 50px;
+    /* Litt luft mellom ikon og tekst til høyre */
+}
+
+.icon-left1 {              /* Velger elementer med klassen 'icon-left' (ikon foran tekst) */
+  font-size: 40px;
+}
  
 /* Stil for input-felt */
 input {
@@ -176,7 +185,8 @@ button {
 /* Rød knapp for farlige handlinger (logout) */
 button.danger {
   /* Rød bakgrunn */
-  background: #8c7a95;
+  background: #da6363;
+  margin-top: 20px;
 }
  
 /* Stil for meldinger (feil/suksess) */

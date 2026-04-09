@@ -20,6 +20,7 @@
 <!-- Hovedoverskrift -->
 <h1>Logg inn</h1>
  
+
     <!-- Viser feilmelding hvis den finnes -->
 <div class="Textp">
 <% if (error) { %>
@@ -33,9 +34,8 @@
 <p class="message success"><%= success %></p>
 <% } %>
 </div>
-    <!-- Login-skjema som sender til /login via POST -->
-
-
+    
+<!-- Login-skjema som sender til /login via POST -->
 <form action="/login" method="POST" class="card">
 <!-- Etikett for e-post -->
 <label for="email">E-post</label>
