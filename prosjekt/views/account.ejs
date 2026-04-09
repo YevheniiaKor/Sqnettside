@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!-- Angir HTML5-dokumenttype -->
+<html lang="no"> <!-- Setter språk til norsk -->
+<head> <!-- Head-seksjon med metadata -->
+  <meta charset="UTF-8" /> <!-- UTF-8 for norske tegn -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsiv visning -->
+  <title>Konto</title> <!-- Sidetittel -->
+  <link rel="icon" type="image/x-icon" href="/Favicon/flowerFavicon32-32.png"> <!-- Favicon -->
+  <link rel="stylesheet" href="/styles.css" /> <!-- Kobler til CSS -->
+</head> <!-- Slutt head -->
+<body> <!-- Starter sideinnhold -->
+
+  <h1>Konto</h1> <!-- Overskrift for siden -->
+
+  <!-- Viser feilmelding hvis satt -->
+  <% if (error) { %> <!-- Sjekker om error-variabel er definert -->
+    <p class="message error"><%= error %></p> <!-- Viser feilmelding i rød boks -->
+  <% } %> <!-- Slutt if error -->
+
+  <!-- Viser suksessmelding hvis satt -->
+  <% if (success) { %> <!-- Sjekker om success-variabel er definert -->
+    <p class="message success"><%= success %></p> <!-- Viser suksess i grønn boks -->
+  <% } %> <!-- Slutt if success -->
+
+  <div class="center-container"> <!-- Wrapper for å sentrere skjema -->
+    <form action="/account/update" method="POST" class="card"> <!-- Skjema for å oppdatere e-post og/eller passord -->
+      <h2>Oppdater konto</h2> <!-- Underoverskrift -->
+
+      <label for="current-email">Nåværende e-post</label> <!-- Etikett for visning av nåværende e-post -->
+      <input id="current-email" type="email" value="<%= user.email %>" disabled /> <!-- Viser dagens e-post (ikke redigerbar) -->
+
+      <label for="email">Ny e-post (valgfritt)</label> <!-- Etikett for ny e-post -->
+      <input id="email" name="email" type="email" placeholder="din@nye-epost.no" /> <!-- Input for ny e-post (kan stå tom) -->
+
+      <hr /> <!-- Visuell inndeling mellom e-post og passord -->
+
+      <label for="current_password">Nåværende passord (påkrevd for endringer)</label> <!-- Etikett for nåværende passord -->
+      <input id="current_password" name="current_password" type="password" required placeholder="Ditt nåværende passord" /> <!-- Input for nåværende passord -->
+
+      <label for="new_password">Nytt passord (valgfritt)</label> <!-- Etikett for nytt passord -->
+      <input id="new_password" name="new_password" type="password" minlength="8" placeholder="Minst 8 tegn" /> <!-- Input for nytt passord -->
+
+      <label for="new_password_confirm">Bekreft nytt passord</label> <!-- Etikett for bekreftelse av nytt passord -->
+      <input id="new_password_confirm" name="new_password_confirm" type="password" minlength="8" placeholder="Gjenta nytt passord" /> <!-- Input for bekreftelse -->
+
+      <button type="submit">Lagre endringer</button> <!-- Sendeknapp for oppdatering -->
+    </form> <!-- Slutt skjema for oppdatering -->
+  </div> <!-- Slutt center-container -->
+
+  <div class="center-container"> <!-- Wrapper for å sentrere slette-skjema -->
+    <form action="/account/delete" method="POST" class="card"> <!-- Skjema for å slette konto -->
+      <h2>Slett konto</h2> <!-- Underoverskrift -->
+
+      <p class="message error">Advarsel: Denne handlingen kan ikke angres.</p> <!-- Advarselsmelding -->
+
+      <label for="del_password">Skriv inn passordet ditt for å bekrefte</label> <!-- Etikett for passord ved sletting -->
+      <input id="del_password" name="password" type="password" required placeholder="Ditt passord" /> <!-- Passordinntasting for bekreftelse -->
+
+      <button type="submit" class="danger">Slett konto</button> <!-- Knapp med "farlig" stil -->
+    </form> <!-- Slutt slette-skjema -->
+  </div> <!-- Slutt center-container -->
+
+  <div class="Textp"> <!-- Sentrert lenkeblokk -->
+    <p> <!-- Avsnitt for lenker -->
+      <a href="/dashboard">Tilbake til dashboard</a> <!-- Lenke tilbake -->
+    </p> <!-- Slutt avsnitt -->
+  </div> <!-- Slutt lenkeblokk -->
+
+</body> <!-- Slutt body -->
+</html> <!-- Slutt dokument -->
