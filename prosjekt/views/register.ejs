@@ -3,17 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 <title>FloraGame-Register</title>
-
 <link rel="icon" type="image/x-icon" href="/Favicon/flowerFavicon32-32.png">
-
-<!-- Kobler til vår CSS-fil for styling -->
 <link rel="stylesheet" href="/styles.css" />
 </head>
-<!-- Start på body som inneholder synlig innhold -->
+
 <body>
-<!-- Overskrift for siden -->
+<!-- Tittel -->
 <h1>Register</h1>
  
 <div class="Textp">
@@ -30,32 +26,28 @@
 <% } %>
 </div> 
 
-    <!-- Registreringsskjema som sendes via POST til /register -->
+<!-- Registreringsskjema som sendes via POST til /register -->
 <div class="center-container">
-<form action="/register" method="POST" class="card">
-<!-- Felt for e-postadresse -->
-<label for="email">E-post</label>
-<!-- Input for e-post, påkrevd -->
-<input id="email" name="email" type="email" required placeholder="din@epost.no" />
- 
-
-      <!-- Felt for passord -->
-<label for="password">Passord</label>
-<!-- Input for passord, påkrevd, minst 8 tegn -->
-<input id="password" name="password" type="password" minlength="8" required placeholder="Minst 8 tegn" />
-
- 
-      <!-- Knapp for å sende inn skjemaet -->
-<button type="submit">Registrer</button>
-</form>
+    <form action="/register" method="POST" class="card">
+        <!-- Felt for e-postadresse -->
+        <label for="email">E-post</label>
+        <!-- Input for e-post, påkrevd -->
+        <input id="email" name="email" type="email" required placeholder="din@epost.no" />
+        <!-- Felt for passord -->
+        <label for="password">Passord</label>
+         <!-- Input for passord, påkrevd, minst 8 tegn -->
+         <input id="password" name="password" type="password" minlength="8" required placeholder="Minst 8 tegn" />
+          <!-- Knapp for å sende inn skjemaet -->
+          <button type="submit">Registrer</button>
+        </form>
 </div>
 
-    <!-- Lenke for å gå til innloggingssiden -->
+<!-- Lenke for å gå til innloggingssiden -->
 <div class="Textp">
-<p>Har du allerede en konto?
-<!-- Lenke til login-siden -->
-<a href="/login">Logg inn her</a>
-</p>
+    <p>Har du allerede en konto?
+        <!-- Lenke til login-siden -->
+        <a href="/login">Logg inn her</a>
+    </p>
 </div>
 
 </body>

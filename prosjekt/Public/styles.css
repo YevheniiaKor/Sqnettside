@@ -130,9 +130,13 @@ img {
 }
 
 .icon-left {              /* Velger elementer med klassen 'icon-left' (ikon foran tekst) */
-  margin-left: 25em;
+  margin-left: 10em;
   font-size: 50px;
     /* Litt luft mellom ikon og tekst til høyre */
+}
+
+.icon-right {             /* Velger elementer med klassen 'icon-right' (ikon etter tekst) */
+  margin-left: 0.4rem;    /* Litt luft mellom tekst og ikon til venstre */
 }
 
 .icon-left1 {              /* Velger elementer med klassen 'icon-left' (ikon foran tekst) */
